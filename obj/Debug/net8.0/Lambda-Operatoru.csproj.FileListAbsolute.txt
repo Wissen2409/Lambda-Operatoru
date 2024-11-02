@@ -1,0 +1,14 @@
+/Users/emrahelis/Lambda-Operatoru/bin/Debug/net8.0/Lambda-Operatoru
+/Users/emrahelis/Lambda-Operatoru/bin/Debug/net8.0/Lambda-Operatoru.deps.json
+/Users/emrahelis/Lambda-Operatoru/bin/Debug/net8.0/Lambda-Operatoru.runtimeconfig.json
+/Users/emrahelis/Lambda-Operatoru/bin/Debug/net8.0/Lambda-Operatoru.dll
+/Users/emrahelis/Lambda-Operatoru/bin/Debug/net8.0/Lambda-Operatoru.pdb
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.AssemblyInfoInputs.cache
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.AssemblyInfo.cs
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.csproj.CoreCompileInputs.cache
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.dll
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/refint/Lambda-Operatoru.dll
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.pdb
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.genruntimeconfig.cache
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/ref/Lambda-Operatoru.dll
