@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lambda-Operatoru")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0ec86ede4c5f49617cd5e3c49fc794ae70fb836")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2668bef8cc765b2ddc694ff961e300fb8d9dcc3f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lambda-Operatoru")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lambda-Operatoru")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
