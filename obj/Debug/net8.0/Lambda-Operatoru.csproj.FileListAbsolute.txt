@@ -12,3 +12,4 @@
 /Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.pdb
 /Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.genruntimeconfig.cache
 /Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/ref/Lambda-Operatoru.dll
+/Users/emrahelis/Lambda-Operatoru/obj/Debug/net8.0/Lambda-Operatoru.sourcelink.json
