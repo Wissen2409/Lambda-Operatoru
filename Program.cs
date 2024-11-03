@@ -19,6 +19,7 @@ personels.Add(new Personel() { Id = 4, DepertmanId = 3, Name = "Selçuk", Age = 
 personels.Add(new Personel() { Id = 5, DepertmanId = 1, Name = "Nuray", Age = 50, Salary = 80 });
 personels.Add(new Personel() { Id = 6, DepertmanId = 4, Name = "Hatice", Age = 45, Salary = 80 });
 personels.Add(new Personel() { Id = 7, DepertmanId = 3, Name = "Burak", Age = 9, Salary = 40 });
+personels.Add(new Personel() { Id = 7, DepertmanId = 10, Name = "Ayşe", Age = 9, Salary = 40 });
 
 // Lambda Operatörü : 
 
