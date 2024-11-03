@@ -266,7 +266,7 @@ foreach(var item in grupped){
 
 // Personel ve Departman tablolarını birbirine bağlayıp, ekrana yazdıralım!!!
 
-var joinResult = personels.Join(
+/*var joinResult = personels.Join(
     departmans                // bağlanacak tablo
     ,pers => pers.DepertmanId // iki tabloyu birbirine bağlayacak kolon
     , dep => dep.Id           // iki tabloyu birbirine bağlayacak kolon
@@ -281,3 +281,46 @@ foreach (var item in joinResult)
     Console.WriteLine("Departman Ad : {0} |||   Personel Ad : {1}", item.DepartmanAd, item.PersonelAd);
 }
 
+*
+
+// Group Join : 
+// İki tabloyu birbirine bağlayıp, aynı zamanada iki tablo üzerinden gruplama işlemi yapabilmeyi sağlamaktadır!!
+
+
+*/
+
+/*var groupJoinResult = departmans.GroupJoin(personels // bağlanacak tablo
+,departman => departman.Id                           // ilk tablodaki ortak alan
+, personel => personel.DepertmanId                   // ikinci tablodaki ortak alan
+, (departman, personel) => new                       
+{
+
+    DepartmanAd = departman.Name,
+    KacKisi = personel.Count()
+
+});
+
+foreach(var item in groupJoinResult){
+    Console.WriteLine("{0}:{1}",item.DepartmanAd,item.KacKisi);
+}*/
+
+// Yukarıdaki sorguda hangi departmanda kaç personel olduğu bilgi var
+// peki, hangi departmanda kimler var !!
+
+var groupJoinResult = departmans.GroupJoin(personels // bağlanacak tablo
+,departman => departman.Id                           // ilk tablodaki ortak alan
+, personel => personel.DepertmanId                   // ikinci tablodaki ortak alan
+, (departman, personel) => new                       
+{
+    DepartmanAd = departman.Name,
+    Personeller = personel.Select(s=>s.Name).ToList()
+});
+
+foreach(var item in groupJoinResult){
+    Console.WriteLine("{0}",item.DepartmanAd);
+    foreach(var pers in item.Personeller){
+        Console.WriteLine("Ad : {0}",pers);
+    }
+
+    Console.WriteLine("-*-*-*-*-*-*-*-*-*-*-");
+}
