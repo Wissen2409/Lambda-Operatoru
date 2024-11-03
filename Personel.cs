@@ -1,6 +1,8 @@
 public class Personel{
 
     public int Id { get; set; }
+
+    public int DepertmanId { get; set; }
     public string Name { get; set; }
 
     public int Age { get; set; }    
