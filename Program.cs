@@ -307,20 +307,38 @@ foreach(var item in groupJoinResult){
 // Yukarıdaki sorguda hangi departmanda kaç personel olduğu bilgi var
 // peki, hangi departmanda kimler var !!
 
+/*var groupJoinResult = departmans.GroupJoin(personels // bağlanacak tablo
+,departman => departman.Id                           // ilk tablodaki ortak alan
+, personel => personel.DepertmanId                   // ikinci tablodaki ortak alan
+, (departman, personel) => new                       
+{
+    DepartmanAd = departman.Name,
+    Personeller = personel.Select(s=>new {Name = s.Name,Age =s.Age}).ToList(),
+    Sayi = personel.Count(),
+    DepartmanYastoplam = personel.Sum(s=>s.Age)
+}).Where(s=>s.Sayi>2).OrderBy(s=>s.Sayi); 
+foreach(var item in groupJoinResult){
+    Console.WriteLine("{0}- {1} Yaş Toplam : {2}",item.DepartmanAd,item.Sayi,item.DepartmanYastoplam);
+    foreach(var pers in item.Personeller){
+        Console.WriteLine("Ad : {0} Yaş {1}: ",pers.Name,pers.Age);
+    }
+    Console.WriteLine("-*-*-*-*-*-*-*-*-*-*-");
+}*/
+
+
+// her departmanda en yaşlı personelleri getirelim
 var groupJoinResult = departmans.GroupJoin(personels // bağlanacak tablo
 ,departman => departman.Id                           // ilk tablodaki ortak alan
 , personel => personel.DepertmanId                   // ikinci tablodaki ortak alan
 , (departman, personel) => new                       
 {
     DepartmanAd = departman.Name,
-    Personeller = personel.Select(s=>s.Name).ToList()
+    EnYasliPersonel = personel.OrderByDescending(x=>x.Age).FirstOrDefault(),
+    Sayi = personel.Count(),
+    DepartmanYastoplam = personel.Sum(s=>s.Age)
 });
-
 foreach(var item in groupJoinResult){
-    Console.WriteLine("{0}",item.DepartmanAd);
-    foreach(var pers in item.Personeller){
-        Console.WriteLine("Ad : {0}",pers);
-    }
-
+    Console.WriteLine("{0}---{1}",item.DepartmanAd,item.EnYasliPersonel.Name);
+    
     Console.WriteLine("-*-*-*-*-*-*-*-*-*-*-");
 }
